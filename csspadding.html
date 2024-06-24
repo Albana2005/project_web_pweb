@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Margin</title>
+    <link rel="stylesheet" href="desain.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="sidebar locked">
+        <div class="logo_items flex">
+            <span class="nav_image">
+                <img src="albana.jpg" alt="logo_img" />
+            </span>
+            <span class="logo_name">Materi Coding</span>
+            <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+            <i class="bx bx-x" id="sidebar-close"></i>
+        </div>
+
+        <div class="menu_container">
+            <div class="menu_items">
+                <ul class="menu_item">
+                    <li class="item">
+                        <a href="halamanutama.html" class="link flex">
+                          <i class="bx bx-home-alt"></i>
+                          <span>Home</span>
+                        </a>
+                      </li>
+                    <div class="menu_title flex">
+                        <span class="title">LANGUAGE</span>
+                        <span class="line"></span>
+                    </div>
+                    <li class="item">
+                        <a href="#" class="link flex" data-target="html.html" onclick="toggleSubMenu(event, 'html-submenu')">
+                            <i class="bx bx-grid-alt"></i>
+                            <span>HTML</span>
+                            <i class="bx bx-chevron-down toggle-icon"></i>
+                        </a>
+                        <div id="html-submenu" class="submenu">
+                            <a href="materi_1.html">HTML Materi 1</a>
+                            <a href="#">HTML Materi 2</a>
+                            <a href="#">HTML Materi 3</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link flex" data-target="css.html" onclick="toggleSubMenu(event, 'css-submenu')">
+                            <i class="bx bx-grid-alt"></i>
+                            <span>CSS</span>
+                            <i class="bx bx-chevron-down toggle-icon"></i>
+                        </a>
+                        <div id="css-submenu" class="submenu">
+                            <a href="cssbackround.html">CSS Backround</a>
+                            <a href="cssmargin.html">CSS Margin</a>
+                            <a href="csspadding.html">CSS Padding</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link flex" data-target="javascript.html" onclick="toggleSubMenu(event, 'js-submenu')">
+                            <i class="bx bx-grid-alt"></i>
+                            <span>JavaScript</span>
+                            <i class="bx bx-chevron-down toggle-icon"></i>
+                        </a>
+                        <div id="js-submenu" class="submenu">
+                            <a href="#">JavaScript Materi 1</a>
+                            <a href="#">JavaScript Materi 2</a>
+                            <a href="#">JavaScript Materi 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main-content" class="conten">
+       <div class="corse1">
+
+        <h1>CSS Padding</h1>
+        <br>
+        <div>
+            <img class="fotsin" src="padding.png">
+        </div>
+        <br>
+        <p>Padding dalam CSS adalah properti yang digunakan untuk mengatur ruang di dalam elemen, antara konten elemen dan batas (border) elemen tersebut. Padding menambah ruang di dalam elemen, tidak mempengaruhi tata letak elemen di luar batas elemen itu sendiri. </p>
+        <br>
+        <hr>
+        <br>
+        <h1>Jenis Jenis Padding</h1>
+        <ul class="list">
+            <li>Padding Individual</li>
+            <li>Margin Shorthand</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h1>Contoh Padding Individual</h1>
+        <ul class="list">
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <div class="contoh">
+            <h2>Contoh Padding Individual</h2>
+            <br>
+            <pre class="contoh2"><code>
+                p {
+                    padding-top: 25px;
+                  }
+            </code></pre>
+        </div>
+    <p>Padding Individual untuk mengatur Padding satu bagian contoh di atas untuk mengatur bagian Atas</p>
+    <br>
+    <hr>
+    <br>
+        <h1>Contoh Padding Shorthand</h1>
+        <ul class="list">
+            <li>Padding Yang terdapat 4 nilai</li>
+            <li>Padding Yang terdapat 3 nilai</li>
+            <li>Padding Yang terdapat 2 nilai</li>
+            <li>Padding Yang terdapat 1 nilai</li>
+        </ul>
+        <br>
+        <hr>
+        <div class="exemple">
+            <h2>Contoh Padding 4 Nilai</h2>
+            <br>
+            <div class="kode">
+                <pre><code>
+                    p {
+                        Padding: 25px 50px 75px 100px;
+                      }
+                </code></pre>
+            </div>
+            <br> 
+        </div>
+        <p>Padding 4 nilai untuk mengatur bagian atas -> kanan -> bawah -> kiri</p>
+        <br>
+        <hr>
+        <br>
+        <div class="exemple">
+            <h2>Contoh Padding 3 Nilai</h2>
+            <br>
+            <div class="kode">
+                <pre><code>
+                    p {
+                        Padding: 25px 50px 75px;
+                      }
+                </code></pre>
+            </div>
+            <br> 
+        </div>
+        <p>Padding 3 nilai untuk mengatur bagian atas -> kanan dan kiri -> bawah</p>
+        <br>
+        <hr>
+        <br>
+        <div class="exemple">
+            <h2>Contoh Padding 2 Nilai</h2>
+            <br>
+            <div class="kode">
+                <pre><code>
+                    p {
+                        Padding: 25px 50px;
+                      }
+                </code></pre>
+            </div>
+            <br> 
+        </div>
+        <p>Padding nilai untu mengatur bagian atas dan bawah -> kanan dan kiri</p>
+        <br>
+        <hr>
+        <br>
+        <div class="exemple">
+            <h2>Contoh Padding 1 Nilai</h2>
+            <br>
+            <div class="kode">
+                <pre><code>
+                    p {
+                        Padding: 25px;
+                      }
+                </code></pre>
+            </div>
+            <br> 
+        </div>
+        <p>Padding 1 nilai untuk mengatur keempat Padding nya dengan ukuran sama</p>
+        <br>
+     </div>  
+     </div>
+
+</body>
+</html>
